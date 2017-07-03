@@ -6,7 +6,8 @@ public class Kid {
 
     Observe o;
 
-    public  void wakeUp(){
-        o.handleWakeUp();
+    public void wakeUp() {
+        WakeUpEvent event = new WakeUpEvent(10, this);
+        o.handleWakeUp(event);
     }
 }

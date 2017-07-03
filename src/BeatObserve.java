@@ -3,7 +3,7 @@
  */
 public class BeatObserve implements Observe{
     @Override
-    public void handleWakeUp() {
+    public void handleWakeUp(WakeUpEvent event) {
         System.out.println("Beat");
     }
 }

@@ -3,7 +3,10 @@
  */
 public class HongHongObserve implements Observe{
     @Override
-    public void handleWakeUp() {
-        System.out.println("Honghong");
+    public void handleWakeUp(WakeUpEvent event) {
+        if (event.voice > 5){
+            System.out.println("Honghong");
+        }
+
     }
 }
